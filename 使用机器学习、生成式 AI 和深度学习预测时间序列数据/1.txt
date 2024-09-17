@@ -1,0 +1,2 @@
+https://medium.com/@palashm0002/predicting-time-series-data-with-machine-learning-generative-ai-and-deep-learning-36bf99ad6f5e
+时间序列数据预测是各个行业的关键方面，从金融和医疗保健到营销和物流。根据历史数据预测未来值的能力可以推动决策流程和运营效率的显著改进。随着机器学习、生成式 AI 和深度学习的进步，现在有更复杂的方法可用于解决时间序列预测问题。本博客将探讨可用于时间序列数据预测的不同方法和模型。
