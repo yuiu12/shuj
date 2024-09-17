@@ -1,0 +1,250 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 600px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+             #loadingBar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width: 100%;
+                 height: 600px;
+                 background-color:rgba(200,200,200,0.8);
+                 -webkit-transition: all 0.5s ease;
+                 -moz-transition: all 0.5s ease;
+                 -ms-transition: all 0.5s ease;
+                 -o-transition: all 0.5s ease;
+                 transition: all 0.5s ease;
+                 opacity:1;
+             }
+
+             #bar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width:20px;
+                 height:20px;
+                 margin:auto auto auto auto;
+                 border-radius:11px;
+                 border:2px solid rgba(30,30,30,0.05);
+                 background: rgb(0, 173, 246); /* Old browsers */
+                 box-shadow: 2px 0px 4px rgba(0,0,0,0.4);
+             }
+
+             #border {
+                 position:absolute;
+                 top:10px;
+                 left:10px;
+                 width:500px;
+                 height:23px;
+                 margin:auto auto auto auto;
+                 box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+                 border-radius:10px;
+             }
+
+             #text {
+                 position:absolute;
+                 top:8px;
+                 left:530px;
+                 width:30px;
+                 height:50px;
+                 margin:auto auto auto auto;
+                 font-size:22px;
+                 color: #000000;
+             }
+
+             div.outerBorder {
+                 position:relative;
+                 top:400px;
+                 width:600px;
+                 height:44px;
+                 margin:auto auto auto auto;
+                 border:8px solid rgba(0,0,0,0.1);
+                 background: rgb(252,252,252); /* Old browsers */
+                 background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+                 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+                 background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+                 background: -o-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+                 background: -ms-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* IE10+ */
+                 background: linear-gradient(to bottom,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* W3C */
+                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+                 border-radius:72px;
+                 box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+             }
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+            <div id="loadingBar">
+              <div class="outerBorder">
+                <div id="text">0%</div>
+                <div id="border">
+                  <div id="bar"></div>
+                </div>
+              </div>
+            </div>
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "id": "Mossack Fonseca", "label": "Mossack Fonseca", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Financial Analysis Unit (UAF)", "label": "Financial Analysis Unit (UAF)", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "money-laundering", "label": "money-laundering", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Panama Papers", "label": "Panama Papers", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Data Leak", "label": "Data Leak", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "holding companies", "label": "holding companies", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Panama", "label": "Panama", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Client Database", "label": "Client Database", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Feberion", "label": "Feberion", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Weak Security", "label": "Weak Security", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Client Login Portal Issues", "label": "Client Login Portal Issues", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Email Hack", "label": "Email Hack", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "SQL Injection", "label": "SQL Injection", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Jan Marsalek", "label": "Jan Marsalek", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Harald Joachim von der Goltz", "label": "Harald Joachim von der Goltz", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "John Doe", "label": "John Doe", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Bastian Obermayer", "label": "Bastian Obermayer", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Latin America", "label": "Latin America", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "International Consortium of Investigative Journalists", "label": "International Consortium of Investigative Journalists", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Germany", "label": "Germany", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Russia", "label": "Russia", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "J\u00fcrgen Mossack", "label": "J\u00fcrgen Mossack", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Ram\u00f3n Fonseca", "label": "Ram\u00f3n Fonseca", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "David Cameron", "label": "David Cameron", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Sigmundur Dav\u00ed\u00f0 Gunnlaugsson", "label": "Sigmundur Dav\u00ed\u00f0 Gunnlaugsson", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Beny Steinmetz", "label": "Beny Steinmetz", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Octea", "label": "Octea", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Koidu", "label": "Koidu", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Sierra Leone", "label": "Sierra Leone", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Karim Wade", "label": "Karim Wade", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Dieter Neupert", "label": "Dieter Neupert", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "mishandling client funds", "label": "mishandling client funds", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Stanley Kubrick", "label": "Stanley Kubrick", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "offshore tax evasion", "label": "offshore tax evasion", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Oxfam", "label": "Oxfam", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "income inequality", "label": "income inequality", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "International Monetary Fund", "label": "International Monetary Fund", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "profit shifting", "label": "profit shifting", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Raymond C. Offenheiser", "label": "Raymond C. Offenheiser", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Igor Angelini", "label": "Igor Angelini", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "money laundering", "label": "money laundering", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "China", "label": "China", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "offshore incorporation", "label": "offshore incorporation", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Foreign Investment", "label": "Foreign Investment", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Britain", "label": "Britain", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Canada", "label": "Canada", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Loan Fraud", "label": "Loan Fraud", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "lawyer", "label": "lawyer", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Vanuatu", "label": "Vanuatu", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Lebanon", "label": "Lebanon", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Jack Blum", "label": "Jack Blum", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Money Laundering", "label": "Money Laundering", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "China CITIC Bank Corp", "label": "China CITIC Bank Corp", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "UK", "label": "UK", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Tomasz Kozlowski", "label": "Tomasz Kozlowski", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Tax Evasion", "label": "Tax Evasion", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Tax Justice Network", "label": "Tax Justice Network", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Tax Abuse", "label": "Tax Abuse", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Antigua and Barbuda", "label": "Antigua and Barbuda", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Bahrain", "label": "Bahrain", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Brunei", "label": "Brunei", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Dominica", "label": "Dominica", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Liberia", "label": "Liberia", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Nauru", "label": "Nauru", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Samoa", "label": "Samoa", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "David P. Weber", "label": "David P. Weber", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Chris Kubecka", "label": "Chris Kubecka", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Mossack Fonseca Security Issues", "label": "Mossack Fonseca Security Issues", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "James Sanders", "label": "James Sanders", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Gerard Ryle", "label": "Gerard Ryle", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Edward Snowden", "label": "Edward Snowden", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Micah White", "label": "Micah White", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Kristinn Hrafnsson", "label": "Kristinn Hrafnsson", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Daphne Caruana Galizia", "label": "Daphne Caruana Galizia", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "J\u00e1n Kuciak", "label": "J\u00e1n Kuciak", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Khalifa bin Zayed Al Nahyan", "label": "Khalifa bin Zayed Al Nahyan", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Petro Poroshenko", "label": "Petro Poroshenko", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "King Salman", "label": "King Salman", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Maricio Macri", "label": "Maricio Macri", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Afrodille S.A.", "label": "Afrodille S.A.", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Hamad bin Khalifa Al Thani", "label": "Hamad bin Khalifa Al Thani", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Rienne S.A.", "label": "Rienne S.A.", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Yalis S.A.", "label": "Yalis S.A.", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Sheikh Hamad bin Jassim Al Thani", "label": "Sheikh Hamad bin Jassim Al Thani", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Ayad Allawi", "label": "Ayad Allawi", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Xi Jinping", "label": "Xi Jinping", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "brother-in-law", "label": "brother-in-law", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Najib Razak", "label": "Najib Razak", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "son", "label": "son", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Jacob Zuma", "label": "Jacob Zuma", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "nephew", "label": "nephew", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Jackie Chan", "label": "Jackie Chan", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Marianna Olszewski", "label": "Marianna Olszewski", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Rami Makhlouf", "label": "Rami Makhlouf", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Pangates International Corporation", "label": "Pangates International Corporation", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Maxima Middle East Trading", "label": "Maxima Middle East Trading", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Morgan Additives Manufacturing Co", "label": "Morgan Additives Manufacturing Co", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Bashar al-Assad", "label": "Bashar al-Assad", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "US Treasury Department", "label": "US Treasury Department", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "HSBC", "label": "HSBC", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "shell companies", "label": "shell companies", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Makhlouf", "label": "Makhlouf", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Drex Technologies", "label": "Drex Technologies", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "DCB Finance", "label": "DCB Finance", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "North Korea Sanctions", "label": "North Korea Sanctions", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Kim Chol-sam", "label": "Kim Chol-sam", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Nigel Cowie", "label": "Nigel Cowie", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Tareq Abbas", "label": "Tareq Abbas", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Pangates International", "label": "Pangates International", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Syrian Government Sanctions", "label": "Syrian Government Sanctions", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Dexia", "label": "Dexia", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "offshore companies", "label": "offshore companies", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "J. Safra Sarasin", "label": "J. Safra Sarasin", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Credit Suisse", "label": "Credit Suisse", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "UBS", "label": "UBS", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "HSBC Private Bank (Monaco) S.A.", "label": "HSBC Private Bank (Monaco) S.A.", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Soci\u00e9t\u00e9 G\u00e9n\u00e9rale Bank \u0026 Trust Luxembourg", "label": "Soci\u00e9t\u00e9 G\u00e9n\u00e9rale Bank \u0026 Trust Luxembourg", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Banco Santander", "label": "Banco Santander", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "BBVA", "label": "BBVA", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Ram\u00f3n Fonseca Mora", "label": "Ram\u00f3n Fonseca Mora", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Peter Mossack", "label": "Peter Mossack", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Juan Carlos Varela", "label": "Juan Carlos Varela", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Joseph Stiglitz", "label": "Joseph Stiglitz", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Isabel Saint Malo de Alvarado", "label": "Isabel Saint Malo de Alvarado", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Dulcidio de la Guardia", "label": "Dulcidio de la Guardia", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Eduardo Morgan", "label": "Eduardo Morgan", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Adolfo Linares", "label": "Adolfo Linares", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Morgan \u0026 Morgan", "label": "Morgan \u0026 Morgan", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Roland o Gordon", "label": "Roland o Gordon", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Frague la Alfonso", "label": "Frague la Alfonso", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Alvin Weeden", "label": "Alvin Weeden", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Varela", "label": "Varela", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Jenny P\u00e9rez", "label": "Jenny P\u00e9rez", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Samid Dan Sandoval", "label": "Samid Dan Sandoval", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Kenia Isolda Porcell Diaz", "label": "Kenia Isolda Porcell Diaz", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Thabo Mbeki", "label": "Thabo Mbeki", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Seychelles", "label": "Seychelles", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Australia", "label": "Australia", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Balo\u00edsa Marqu\u00ednez", "label": "Balo\u00edsa Marqu\u00ednez", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Mossack", "label": "Mossack", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Fonseca", "label": "Fonseca", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Africa", "label": "Africa", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Thomas Clark", "label": "Thomas Clark", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "David Sutton", "label": "David Sutton", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "EHG Corporation", "label": "EHG Corporation", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "AAT Corporation", "label": "AAT Corporation", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Korean Natural Resources Development and Investment Corporation", "label": "Korean Natural Resources Development and Investment Corporation", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Louis Schurmann", "label": "Louis Schurmann", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Kevin Leech", "label": "Kevin Leech", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "John Lister", "label": "John Lister", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Malcolm Turnbull", "label": "Malcolm Turnbull", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Neville Wran", "label": "Neville Wran", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "New Zealand", "label": "New Zealand", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "John Key", "label": "John Key", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Cook Islands", "label": "Cook Islands", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Niue", "label": "Niue", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Jeffrey Webb", "label": "Jeffrey Webb", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "FIFA investigation", "label": "FIFA investigation", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Jack Warner", "label": "Jack Warner", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Chase Bank", "label": "Chase Bank", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Bank of New York", "label": "Bank of New York", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Jos\u00e9 Hawilla", "label": "Jos\u00e9 Hawilla", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Traffic Group", "label": "Traffic Group", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Torneos \u0026 Traffic", "label": "Torneos \u0026 Traffic", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Fox International Channels", "label": "Fox International Channels", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Eugenio Figueredo", "label": "Eugenio Figueredo", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Michel Platini", "label": "Michel Platini", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "J\u00e9r\u00f4me Valcke", "label": "J\u00e9r\u00f4me Valcke", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Lionel Messi", "label": "Lionel Messi", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Antonio Guglielmi", "label": "Antonio Guglielmi", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Gianni Infantino", "label": "Gianni Infantino", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "f7664baa-a094-4a03-99de-c2f7625ae98f", "label": "f7664baa-a094-4a03-99de-c2f7625ae98f", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "9ab56b96-31c7-4cca-8484-8fd6184dc211", "label": "9ab56b96-31c7-4cca-8484-8fd6184dc211", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "3caa9fb5-73e6-4670-a9d6-37732f12a1b5", "label": "3caa9fb5-73e6-4670-a9d6-37732f12a1b5", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "c63e9733-d8ee-4c4f-bea4-ad4d96858694", "label": "c63e9733-d8ee-4c4f-bea4-ad4d96858694", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "dda3eb29-6268-445f-933a-4baabf6e4655", "label": "dda3eb29-6268-445f-933a-4baabf6e4655", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "88084037-2477-4b7b-921b-7eeea532fefc", "label": "88084037-2477-4b7b-921b-7eeea532fefc", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "ed0d1db6-8e91-42f7-aebd-541b6da2b495", "label": "ed0d1db6-8e91-42f7-aebd-541b6da2b495", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "4a702253-5314-4885-af4f-6648c2d00afd", "label": "4a702253-5314-4885-af4f-6648c2d00afd", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "c0d3cc77-6ac6-4685-bba0-ef78d6d270eb", "label": "c0d3cc77-6ac6-4685-bba0-ef78d6d270eb", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "78e79d60-df92-47be-9482-9bd79153e1fe", "label": "78e79d60-df92-47be-9482-9bd79153e1fe", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "81f2ef4f-2004-4d7d-ba58-4514e4270e43", "label": "81f2ef4f-2004-4d7d-ba58-4514e4270e43", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "06b809c0-9001-4013-bd2f-42df422e13a1", "label": "06b809c0-9001-4013-bd2f-42df422e13a1", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "d507c04c-7ccf-4e32-a293-08f991cec386", "label": "d507c04c-7ccf-4e32-a293-08f991cec386", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "ea687e37-f88a-4a1f-b8d5-ac352d1d8255", "label": "ea687e37-f88a-4a1f-b8d5-ac352d1d8255", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "7c2b29bf-d613-40fc-ae40-649848380345", "label": "7c2b29bf-d613-40fc-ae40-649848380345", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "1264ff0a-ed7b-4119-8e9b-ce8dec613c61", "label": "1264ff0a-ed7b-4119-8e9b-ce8dec613c61", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "ae31e374-4028-4f9e-8181-0b8f82b66be1", "label": "ae31e374-4028-4f9e-8181-0b8f82b66be1", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "3301115e-2214-4e2c-a5be-8e8f2eb70d1e", "label": "3301115e-2214-4e2c-a5be-8e8f2eb70d1e", "shape": "dot", "size": 10}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "Mossack Fonseca", "label": "OWNS", "to": "Financial Analysis Unit (UAF)", "width": 1}, {"arrows": "to", "from": "Mossack Fonseca", "label": "INVOLVED_IN", "to": "money-laundering", "width": 1}, {"arrows": "to", "from": "Mossack Fonseca", "label": "OWNS", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Mossack Fonseca", "label": "INVOLVED_IN", "to": "Data Leak", "width": 1}, {"arrows": "to", "from": "Mossack Fonseca", "label": "OWNS", "to": "holding companies", "width": 1}, {"arrows": "to", "from": "Mossack Fonseca", "label": "LOCATED_IN", "to": "Panama", "width": 1}, {"arrows": "to", "from": "Mossack Fonseca", "label": "OWNS", "to": "Client Database", "width": 1}, {"arrows": "to", "from": "Mossack Fonseca", "label": "OWNS", "to": "Feberion", "width": 1}, {"arrows": "to", "from": "Mossack Fonseca", "label": "INVOLVED_IN", "to": "Weak Security", "width": 1}, {"arrows": "to", "from": "Mossack Fonseca", "label": "INVOLVED_IN", "to": "Client Login Portal Issues", "width": 1}, {"arrows": "to", "from": "Mossack Fonseca", "label": "INVOLVED_IN", "to": "Email Hack", "width": 1}, {"arrows": "to", "from": "Mossack Fonseca", "label": "INVOLVED_IN", "to": "SQL Injection", "width": 1}, {"arrows": "to", "from": "Panama Papers", "label": "INVOLVED_IN", "to": "Mossack Fonseca", "width": 1}, {"arrows": "to", "from": "Panama Papers", "label": "LOCATED_IN", "to": "Panama", "width": 1}, {"arrows": "to", "from": "Jan Marsalek", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Harald Joachim von der Goltz", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "John Doe", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Bastian Obermayer", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Panama", "label": "LOCATED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Panama", "label": "LOCATED_IN", "to": "Latin America", "width": 1}, {"arrows": "to", "from": "International Consortium of Investigative Journalists", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Germany", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Russia", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "J\u00fcrgen Mossack", "label": "OWNS", "to": "Mossack Fonseca", "width": 1}, {"arrows": "to", "from": "J\u00fcrgen Mossack", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Ram\u00f3n Fonseca", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "David Cameron", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Sigmundur Dav\u00ed\u00f0 Gunnlaugsson", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Beny Steinmetz", "label": "OWNS", "to": "Octea", "width": 1}, {"arrows": "to", "from": "Octea", "label": "OWNS", "to": "Koidu", "width": 1}, {"arrows": "to", "from": "Sierra Leone", "label": "LOCATED_IN", "to": "Koidu", "width": 1}, {"arrows": "to", "from": "Karim Wade", "label": "INVOLVED_IN", "to": "money-laundering", "width": 1}, {"arrows": "to", "from": "Dieter Neupert", "label": "INVOLVED_IN", "to": "mishandling client funds", "width": 1}, {"arrows": "to", "from": "Stanley Kubrick", "label": "INVOLVED_IN", "to": "offshore tax evasion", "width": 1}, {"arrows": "to", "from": "Stanley Kubrick", "label": "OWNS", "to": "holding companies", "width": 1}, {"arrows": "to", "from": "Oxfam", "label": "INVOLVED_IN", "to": "income inequality", "width": 1}, {"arrows": "to", "from": "International Monetary Fund", "label": "INVOLVED_IN", "to": "profit shifting", "width": 1}, {"arrows": "to", "from": "Raymond C. Offenheiser", "label": "INVOLVED_IN", "to": "income inequality", "width": 1}, {"arrows": "to", "from": "Igor Angelini", "label": "INVOLVED_IN", "to": "money laundering", "width": 1}, {"arrows": "to", "from": "China", "label": "INVOLVED_IN", "to": "offshore incorporation", "width": 1}, {"arrows": "to", "from": "China", "label": "INVOLVED_IN", "to": "Foreign Investment", "width": 1}, {"arrows": "to", "from": "Britain", "label": "LOCATED_IN", "to": "Stanley Kubrick", "width": 1}, {"arrows": "to", "from": "Canada", "label": "INVOLVED_IN", "to": "Loan Fraud", "width": 1}, {"arrows": "to", "from": "Canada", "label": "LOCATED_IN", "to": "lawyer", "width": 1}, {"arrows": "to", "from": "Vanuatu", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Lebanon", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Jack Blum", "label": "INVOLVED_IN", "to": "Money Laundering", "width": 1}, {"arrows": "to", "from": "China CITIC Bank Corp", "label": "INVOLVED_IN", "to": "Loan Fraud", "width": 1}, {"arrows": "to", "from": "UK", "label": "INVOLVED_IN", "to": "Money Laundering", "width": 1}, {"arrows": "to", "from": "Tomasz Kozlowski", "label": "INVOLVED_IN", "to": "Tax Evasion", "width": 1}, {"arrows": "to", "from": "Tax Justice Network", "label": "INVOLVED_IN", "to": "Tax Abuse", "width": 1}, {"arrows": "to", "from": "Antigua and Barbuda", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Bahrain", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Brunei", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Dominica", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Liberia", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Nauru", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Samoa", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "David P. Weber", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Chris Kubecka", "label": "INVOLVED_IN", "to": "Mossack Fonseca Security Issues", "width": 1}, {"arrows": "to", "from": "James Sanders", "label": "INVOLVED_IN", "to": "Mossack Fonseca Security Issues", "width": 1}, {"arrows": "to", "from": "Gerard Ryle", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Edward Snowden", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Micah White", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Kristinn Hrafnsson", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Daphne Caruana Galizia", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "J\u00e1n Kuciak", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Khalifa bin Zayed Al Nahyan", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Petro Poroshenko", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "King Salman", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Maricio Macri", "label": "INVOLVED_IN", "to": "Afrodille S.A.", "width": 1}, {"arrows": "to", "from": "Hamad bin Khalifa Al Thani", "label": "OWNS", "to": "Rienne S.A.", "width": 1}, {"arrows": "to", "from": "Hamad bin Khalifa Al Thani", "label": "OWNS", "to": "Afrodille S.A.", "width": 1}, {"arrows": "to", "from": "Hamad bin Khalifa Al Thani", "label": "OWNS", "to": "Yalis S.A.", "width": 1}, {"arrows": "to", "from": "Sheikh Hamad bin Jassim Al Thani", "label": "OWNS", "to": "Rienne S.A.", "width": 1}, {"arrows": "to", "from": "Sheikh Hamad bin Jassim Al Thani", "label": "OWNS", "to": "Yalis S.A.", "width": 1}, {"arrows": "to", "from": "Ayad Allawi", "label": "INVOLVED_IN", "to": "Mossack Fonseca", "width": 1}, {"arrows": "to", "from": "Xi Jinping", "label": "INVOLVED_IN", "to": "brother-in-law", "width": 1}, {"arrows": "to", "from": "Najib Razak", "label": "INVOLVED_IN", "to": "son", "width": 1}, {"arrows": "to", "from": "Jacob Zuma", "label": "INVOLVED_IN", "to": "nephew", "width": 1}, {"arrows": "to", "from": "Jackie Chan", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Marianna Olszewski", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Rami Makhlouf", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Pangates International Corporation", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Maxima Middle East Trading", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Morgan Additives Manufacturing Co", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Bashar al-Assad", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "US Treasury Department", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "HSBC", "label": "OWNS", "to": "shell companies", "width": 1}, {"arrows": "to", "from": "HSBC", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Makhlouf", "label": "OWNS", "to": "Drex Technologies", "width": 1}, {"arrows": "to", "from": "DCB Finance", "label": "INVOLVED_IN", "to": "North Korea Sanctions", "width": 1}, {"arrows": "to", "from": "Kim Chol-sam", "label": "OWNS", "to": "DCB Finance", "width": 1}, {"arrows": "to", "from": "Nigel Cowie", "label": "OWNS", "to": "DCB Finance", "width": 1}, {"arrows": "to", "from": "Tareq Abbas", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Pangates International", "label": "INVOLVED_IN", "to": "Syrian Government Sanctions", "width": 1}, {"arrows": "to", "from": "Dexia", "label": "OWNS", "to": "offshore companies", "width": 1}, {"arrows": "to", "from": "J. Safra Sarasin", "label": "OWNS", "to": "offshore companies", "width": 1}, {"arrows": "to", "from": "Credit Suisse", "label": "OWNS", "to": "offshore companies", "width": 1}, {"arrows": "to", "from": "UBS", "label": "OWNS", "to": "offshore companies", "width": 1}, {"arrows": "to", "from": "HSBC Private Bank (Monaco) S.A.", "label": "OWNS", "to": "offshore companies", "width": 1}, {"arrows": "to", "from": "Soci\u00e9t\u00e9 G\u00e9n\u00e9rale Bank \u0026 Trust Luxembourg", "label": "OWNS", "to": "offshore companies", "width": 1}, {"arrows": "to", "from": "Banco Santander", "label": "OWNS", "to": "offshore companies", "width": 1}, {"arrows": "to", "from": "BBVA", "label": "OWNS", "to": "offshore companies", "width": 1}, {"arrows": "to", "from": "Ram\u00f3n Fonseca Mora", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Peter Mossack", "label": "OWNS", "to": "Panama", "width": 1}, {"arrows": "to", "from": "Juan Carlos Varela", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Joseph Stiglitz", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Isabel Saint Malo de Alvarado", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Dulcidio de la Guardia", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Eduardo Morgan", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Adolfo Linares", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Morgan \u0026 Morgan", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Roland o Gordon", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Frague la Alfonso", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Alvin Weeden", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Varela", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Jenny P\u00e9rez", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Samid Dan Sandoval", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Kenia Isolda Porcell Diaz", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Thabo Mbeki", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Seychelles", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Australia", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Balo\u00edsa Marqu\u00ednez", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Mossack", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Fonseca", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Africa", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Thomas Clark", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "David Sutton", "label": "INVOLVED_IN", "to": "EHG Corporation", "width": 1}, {"arrows": "to", "from": "David Sutton", "label": "INVOLVED_IN", "to": "AAT Corporation", "width": 1}, {"arrows": "to", "from": "Korean Natural Resources Development and Investment Corporation", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Louis Schurmann", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Kevin Leech", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "John Lister", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Malcolm Turnbull", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Neville Wran", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "New Zealand", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "John Key", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Cook Islands", "label": "LOCATED_IN", "to": "New Zealand", "width": 1}, {"arrows": "to", "from": "Niue", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Jeffrey Webb", "label": "INVOLVED_IN", "to": "FIFA investigation", "width": 1}, {"arrows": "to", "from": "Jack Warner", "label": "INVOLVED_IN", "to": "FIFA investigation", "width": 1}, {"arrows": "to", "from": "Chase Bank", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Bank of New York", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Jos\u00e9 Hawilla", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Traffic Group", "label": "OWNS", "to": "Jos\u00e9 Hawilla", "width": 1}, {"arrows": "to", "from": "Torneos \u0026 Traffic", "label": "OWNS", "to": "Fox International Channels", "width": 1}, {"arrows": "to", "from": "Eugenio Figueredo", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Michel Platini", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "J\u00e9r\u00f4me Valcke", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Lionel Messi", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Antonio Guglielmi", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}, {"arrows": "to", "from": "Gianni Infantino", "label": "INVOLVED_IN", "to": "Panama Papers", "width": 1}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+                      network.on("stabilizationProgress", function(params) {
+                          document.getElementById('loadingBar').removeAttribute("style");
+                          var maxWidth = 496;
+                          var minWidth = 20;
+                          var widthFactor = params.iterations/params.total;
+                          var width = Math.max(minWidth,maxWidth * widthFactor);
+                          document.getElementById('bar').style.width = width + 'px';
+                          document.getElementById('text').innerHTML = Math.round(widthFactor*100) + '%';
+                      });
+                      network.once("stabilizationIterationsDone", function() {
+                          document.getElementById('text').innerHTML = '100%';
+                          document.getElementById('bar').style.width = '496px';
+                          document.getElementById('loadingBar').style.opacity = 0;
+                          // really clean the dom element
+                          setTimeout(function () {document.getElementById('loadingBar').style.display = 'none';}, 500);
+                      });
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
