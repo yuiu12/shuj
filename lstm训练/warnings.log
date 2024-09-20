@@ -1,0 +1,927 @@
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB4D6D90>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 13, 1), dtype=float32, sparse=False, name=keras_tensor_4>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB4D6D90>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.05, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.05})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 13, 1), dtype=float32, sparse=False, name=keras_tensor_5>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB4D6D90>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 13, 1), dtype=float32, sparse=False, name=keras_tensor_6>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB4D6D90>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 13, 1), dtype=float32, sparse=False, name=keras_tensor_7>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB4D6D90>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 13, 1), dtype=float32, sparse=False, name=keras_tensor_8>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB4D6D90>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 13, 1), dtype=float32, sparse=False, name=keras_tensor_9>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB4D6D90>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 13, 1), dtype=float32, sparse=False, name=keras_tensor_10>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB4D6D90>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 13, 1), dtype=float32, sparse=False, name=keras_tensor_11>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB4D6D90>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 13, 1), dtype=float32, sparse=False, name=keras_tensor_12>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB4D6D90>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 13, 1), dtype=float32, sparse=False, name=keras_tensor_13>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:tensorflow:5 out of the last 8 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x000001D4AC7175E0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB4D6D90>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 26, 1), dtype=float32, sparse=False, name=keras_tensor_22>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB4D6D90>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.05, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.05})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 26, 1), dtype=float32, sparse=False, name=keras_tensor_23>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB4D6D90>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 26, 1), dtype=float32, sparse=False, name=keras_tensor_24>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB4D6D90>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 26, 1), dtype=float32, sparse=False, name=keras_tensor_25>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB4D6D90>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 26, 1), dtype=float32, sparse=False, name=keras_tensor_26>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB4D6D90>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 26, 1), dtype=float32, sparse=False, name=keras_tensor_27>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB4D6D90>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 26, 1), dtype=float32, sparse=False, name=keras_tensor_28>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB4D6D90>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 26, 1), dtype=float32, sparse=False, name=keras_tensor_29>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB4D6D90>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 26, 1), dtype=float32, sparse=False, name=keras_tensor_30>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB4D6D90>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 26, 1), dtype=float32, sparse=False, name=keras_tensor_31>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:tensorflow:5 out of the last 12 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x000001D4AC92BE50> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB45D4C0>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 13, 1), dtype=float32, sparse=False, name=keras_tensor_44>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB45D4C0>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.05, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.05})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 13, 1), dtype=float32, sparse=False, name=keras_tensor_45>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB45D4C0>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 13, 1), dtype=float32, sparse=False, name=keras_tensor_46>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB45D4C0>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 13, 1), dtype=float32, sparse=False, name=keras_tensor_47>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB45D4C0>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 13, 1), dtype=float32, sparse=False, name=keras_tensor_48>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB45D4C0>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 13, 1), dtype=float32, sparse=False, name=keras_tensor_49>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB45D4C0>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 13, 1), dtype=float32, sparse=False, name=keras_tensor_50>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB45D4C0>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 13, 1), dtype=float32, sparse=False, name=keras_tensor_51>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB45D4C0>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 13, 1), dtype=float32, sparse=False, name=keras_tensor_52>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB45D4C0>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 13, 1), dtype=float32, sparse=False, name=keras_tensor_53>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB45D4C0>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 26, 1), dtype=float32, sparse=False, name=keras_tensor_62>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB45D4C0>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.05, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.05})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 26, 1), dtype=float32, sparse=False, name=keras_tensor_63>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB45D4C0>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 26, 1), dtype=float32, sparse=False, name=keras_tensor_64>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB45D4C0>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 26, 1), dtype=float32, sparse=False, name=keras_tensor_65>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB45D4C0>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 26, 1), dtype=float32, sparse=False, name=keras_tensor_66>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB45D4C0>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 26, 1), dtype=float32, sparse=False, name=keras_tensor_67>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB45D4C0>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 26, 1), dtype=float32, sparse=False, name=keras_tensor_68>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB45D4C0>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 26, 1), dtype=float32, sparse=False, name=keras_tensor_69>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB45D4C0>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 26, 1), dtype=float32, sparse=False, name=keras_tensor_70>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D4AB45D4C0>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 26, 1), dtype=float32, sparse=False, name=keras_tensor_71>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Lambda value of -0.5 cannot be evaluated. error: Invalid dtype: complex128
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:invalid value encountered in log
+WARNING:root:Lambda value of 0 cannot be evaluated. error: Input contains NaN.
+WARNING:root:Lambda value of 0.5 cannot be evaluated. error: Invalid dtype: complex128
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D53CD1E790>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 10, 1), dtype=float32, sparse=False, name=keras_tensor_332>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D53CD1E790>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 10, 1), dtype=float32, sparse=False, name=keras_tensor_333>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D53CD1E790>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 10, 1), dtype=float32, sparse=False, name=keras_tensor_334>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D53CD1E790>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 10, 1), dtype=float32, sparse=False, name=keras_tensor_335>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D53CD1E790>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.05, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.05})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 10, 1), dtype=float32, sparse=False, name=keras_tensor_336>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D53CD1E790>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 10, 1), dtype=float32, sparse=False, name=keras_tensor_337>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D53CD1E790>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 10, 1), dtype=float32, sparse=False, name=keras_tensor_338>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D53CD1E790>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0, 'return_sequences': False})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 10, 1), dtype=float32, sparse=False, name=keras_tensor_339>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D53CD1E790>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 10, 1), dtype=float32, sparse=False, name=keras_tensor_340>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D53CD1E790>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.05, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.05})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 10, 1), dtype=float32, sparse=False, name=keras_tensor_341>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D53CD1E790>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 10, 1), dtype=float32, sparse=False, name=keras_tensor_342>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D53CD1E790>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 10, 1), dtype=float32, sparse=False, name=keras_tensor_343>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D53CD1E790>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 10, 1), dtype=float32, sparse=False, name=keras_tensor_344>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D53CD1E790>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 10, 1), dtype=float32, sparse=False, name=keras_tensor_345>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D53CD1E790>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.05, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.05})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 10, 1), dtype=float32, sparse=False, name=keras_tensor_346>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D53CD1E790>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 10, 1), dtype=float32, sparse=False, name=keras_tensor_347>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D53CD1E790>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 10, 1), dtype=float32, sparse=False, name=keras_tensor_348>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D53CD1E790>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0, 'return_sequences': False})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 10, 1), dtype=float32, sparse=False, name=keras_tensor_349>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D53CD1E790>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 10, 1), dtype=float32, sparse=False, name=keras_tensor_350>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D53CD1E790>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.05, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.05})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 10, 1), dtype=float32, sparse=False, name=keras_tensor_351>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D53CD1E790>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 10, 1), dtype=float32, sparse=False, name=keras_tensor_352>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D53CD1E790>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 10, 1), dtype=float32, sparse=False, name=keras_tensor_353>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D53CD1E790>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 10, 1), dtype=float32, sparse=False, name=keras_tensor_354>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D53CD1E790>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 10, 1), dtype=float32, sparse=False, name=keras_tensor_355>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D53CD1E790>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.05, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.05})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 10, 1), dtype=float32, sparse=False, name=keras_tensor_356>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D53CD1E790>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 10, 1), dtype=float32, sparse=False, name=keras_tensor_357>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D53CD1E790>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.05})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 10, 1), dtype=float32, sparse=False, name=keras_tensor_358>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D53CD1E790>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.0, 'return_sequences': False})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 10, 1), dtype=float32, sparse=False, name=keras_tensor_359>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D53CD1E790>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'tanh', 'dropout': 0.0})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 10, 1), dtype=float32, sparse=False, name=keras_tensor_360>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Could not evaluate the paramaters: {'verbose': 0, 'epochs': 100, 'validation_split': 0.2, 'callbacks': <keras.src.callbacks.early_stopping.EarlyStopping object at 0x000001D53CD1E790>, 'layers_struct': [('LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.05, 'return_sequences': False}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.05}, 'LSTM', {'units': 100, 'activation': 'relu', 'dropout': 0.05})]}. error: Exception encountered when calling LSTM.call().
+
+[1moutput_size must be an integer.[0m
+
+Arguments received by LSTM.call():
+  • args=('<KerasTensor shape=(None, 10, 1), dtype=float32, sparse=False, name=keras_tensor_361>',)
+  • kwargs={'training': 'False', 'mask': 'None'}
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+WARNING:root:Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
